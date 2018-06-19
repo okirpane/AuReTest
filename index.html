@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+		<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+	</head>
+	<body style="margin : 0px; overflow: hidden;">
+		<a-scene embedded arjs="sourceType: webcam;">
+			<a-assets>
+				<a-asset-item id="object" src="https://cdn.glitch.com/0e0212b3-6508-4568-9b81-c8b7e738a17a%2FYAYAYAYAYAY.obj?1529406292287"></a-asset-item>
+				<a-asset-item id="material" src="https://cdn.glitch.com/0e0212b3-6508-4568-9b81-c8b7e738a17a%2FYAYAYAYAYAY.mtl?1529406290858"></a-asset-item>
+			</a-assets>
+			<a-obj-model src="#object" mtl="#material"></a-obj-model>
+      <a-box position="0 0.5 0" material="opacity: 1;"></a-box>
+			<a-marker-camera preset="hiro"></a-marker-camera>
+		</a-scene>
+	</body>
+</html>
